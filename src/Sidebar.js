@@ -15,6 +15,7 @@ const Sidebar = () => {
   return (
     <div className='sidebar'>
       {/* Twitter icon */}
+      <img className='sidebar_twit_icon' width={'25px'} src={home_icon} alt="" />
 
       {/* Sidebar Options */}
       <SidebarOption active={true} text="Home" icon={home_icon}/>
@@ -24,7 +25,8 @@ const Sidebar = () => {
       <SidebarOption text="Messages" icon={home_icon}/>
       <SidebarOption text="Job Mela" icon={home_icon}/>
       <SidebarOption text="Donate" icon={home_icon}/>
-      <SidebarOption text="Profile" icon={home_icon}/>      
+      <SidebarOption text="Profile" icon={home_icon}/>
+
       <button className='sidebar_tweet'>Tweet</button>
     </div>
   )
