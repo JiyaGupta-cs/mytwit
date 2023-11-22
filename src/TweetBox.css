@@ -21,3 +21,15 @@
 border: none;
 padding: 10px;
 }
+
+.tweetBox_tweetButton{
+background-color: var(--twit-color);
+    border: none;
+    color: white;
+    font-weight: 900;
+    text-transform: inherit;
+    border-radius: 30px;
+    height: 40px;
+    margin-top: 20px;
+    width:100px;
+    font-size: 15px;}
