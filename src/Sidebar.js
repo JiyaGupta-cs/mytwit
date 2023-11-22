@@ -19,11 +19,12 @@ const Sidebar = () => {
       {/* Sidebar Options */}
       <SidebarOption active={true} text="Home" icon={home_icon}/>
       <SidebarOption text="Explore" icon={home_icon}/>
-      <SidebarOption text="Notification" icon={home_icon}/>
+      <SidebarOption text="Events" icon={home_icon}/>
+      <SidebarOption text="Resources" icon={home_icon}/>
       <SidebarOption text="Messages" icon={home_icon}/>
-      <SidebarOption text="Home" icon={home_icon}/>
-      <SidebarOption text="Home" icon={home_icon}/>
-      
+      <SidebarOption text="Job Mela" icon={home_icon}/>
+      <SidebarOption text="Donate" icon={home_icon}/>
+      <SidebarOption text="Profile" icon={home_icon}/>      
       <button className='sidebar_tweet'>Tweet</button>
     </div>
   )
