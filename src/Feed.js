@@ -14,6 +14,9 @@ const Feed = () => {
       <TweetBox />
       {/* Posts */}
       <Post/>
+      <Post/>
+      <Post/>
+      <Post/>
     </div>
   )
 }

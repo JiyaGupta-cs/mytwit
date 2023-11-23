@@ -5,7 +5,7 @@ const Post = (displayName, userName, verified, text, image, avatar) => {
     return (
         <div className='post'>
             <div className="post_avatar">
-                <img src="" alt="" />
+                <img src="https://static.vecteezy.com/system/resources/previews/002/002/257/non_2x/beautiful-woman-avatar-character-icon-free-vector.jpg" alt="" />
             </div>
             <div className="post_body">
                 <div className="post_header">
@@ -15,7 +15,7 @@ const Post = (displayName, userName, verified, text, image, avatar) => {
                         </h3>
                     </div>
                     <div className="post_headerDescription">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placea Placea quibusdam facere aliquam!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit quibusdam facere aliquam!</p>
                     </div>
                 </div>
                 

@@ -42,5 +42,9 @@
   }
   
   .post_avatar {
-    padding: 20px;
+    padding: 2px;
+    padding-top: 20px;
+  }
+  .post_avatar > img{
+    width: 70px;
   }

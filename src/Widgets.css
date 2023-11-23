@@ -5,7 +5,7 @@
   .widgets__input {
     display: flex;
     align-items: center;
-    background-color: var(--twitter-background);
+    background-color: var(--twit-background);
     padding: 10px;
     border-radius: 20px;
     margin-top: 10px;
@@ -14,12 +14,12 @@
   
   .widgets__input > input {
     border: none;
-    background-color: var(--twitter-background);
+    background-color: var(--twit-background);
   }
-  
-  .widgets__searchIcon {
+/*   
+  .widgets_search_icon {
     color: gray;
-  }
+  } */
   
   .widgets__widgetContainer {
     margin-top: 15px;
