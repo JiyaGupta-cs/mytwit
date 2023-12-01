@@ -12,6 +12,7 @@
   
   .post_body > img {
     border-radius: 20px;
+    width: 600px;
   }
   
   .post_footer {

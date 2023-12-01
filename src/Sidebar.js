@@ -1,6 +1,7 @@
 import React from 'react'
 import './Sidebar.css'
 import SidebarOption from './SidebarOption.js'
+import logo from './Assets/BeyondBarriers.png'
 import home_icon from './Assets/home.png'
 import { Link } from 'react-router-dom'
 // import twit_icon from './Assets/home.png'
@@ -16,7 +17,7 @@ const Sidebar = () => {
   return (
     <div className='sidebar'>
       {/* Twit icon */}
-      <img className='sidebar_twit_icon' width={'25px'} src={home_icon} alt="" />
+      <img className='sidebar_twit_icon' width={'100px'} src={logo} alt="" />
 
       {/* Sidebar Options */}
       <SidebarOption active={true} text="Home" icon={home_icon}/>
