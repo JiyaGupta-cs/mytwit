@@ -1,7 +1,7 @@
 import React from 'react'
 import './Sidebar.css'
 import SidebarOption from './SidebarOption.js'
-import home_icon from './Assets/home.png'
+import home_icon from './Assets/BeyondBarriers.png'
 import { Link } from 'react-router-dom'
 // import twit_icon from './Assets/home.png'
 // import search_icon from './Assets/home.png'
