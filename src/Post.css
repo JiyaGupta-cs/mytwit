@@ -8,6 +8,7 @@
   .post_body {
     flex: 1;
     padding: 10px;
+    width: 750px;
   }
   
   .post_body > img {

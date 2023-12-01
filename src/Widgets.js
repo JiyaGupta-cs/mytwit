@@ -11,18 +11,18 @@ const Widgets = () => {
     </div>
 
     <div className="widgets__widgetContainer">
-      <h2>What's happening - Widgets</h2>
+      <h2>What's happening ?</h2>
 
-      <TwitterTweetEmbed tweetId={"858551177860055040"} />
+      <TwitterTweetEmbed tweetId={"1730189541250883947"} />
 
       <TwitterTimelineEmbed
         sourceType="profile"
-        screenName="cleverqazi"
+        screenName="APD_India"
         options={{ height: 400 }}
       />
 
       <TwitterShareButton
-        url={"https://facebook.com/cleverprogrammer"}
+        url={"https://twitter.com/APD_India"}
         options={{ text: "#reactjs is awesome", via: "cleverqazi" }}
       />
     </div>

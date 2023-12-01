@@ -7,13 +7,14 @@ It is a social media platform with a focus on fostering a supportive community f
 ## Features - ##
 
 Key Features in which Users can:-
-1.share their experiences, and stories, and support one another
-2.provides links to resources
-3.support organizations
-4.foster educational content
-5.create and promote events, discussions, or awareness campaigns
-6.Donate
-7.Disabled individuals employment section
+
+1. share their experiences, and stories, and support one another
+2. provides links to resources
+3. support organizations
+4. foster educational content
+5. create and promote events, discussions, or awareness campaigns
+6. Donate
+7. Disabled individuals employment section
 
 ## Live Link : ##
 [https://mytwit.vercel.app/](https://mytwit.vercel.app/)
