@@ -27,6 +27,7 @@ const Sidebar = () => {
       {/* <SidebarOption text="Messages" icon={home_icon}/> */}
       <SidebarOption text="Job Mela" icon={"https://icon-library.com/images/jobs-icon-png/jobs-icon-png-18.jpg"}/>
       <SidebarOption text="Donate" icon={"https://cdn-icons-png.flaticon.com/512/176/176696.png"}/>
+      <Link to='/donate'><SidebarOption text="Donate" icon={"https://cdn-icons-png.flaticon.com/512/176/176696.png"}/></Link>
       {/* <SidebarOption text="Profile" icon={home_icon}/> */}
 
       <button className='sidebar_tweet'>Tweet</button>
