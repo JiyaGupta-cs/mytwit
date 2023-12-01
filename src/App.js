@@ -7,6 +7,8 @@ import TweetBox from './TweetBox';
 import { RouterContext } from 'react-router';
 import Dashboard from './Dashboard';
 import Jobs from './Jobs'
+import Donate from './Donate'
+// import DonateBox from './DonateBox'
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Dashboard/>} />
           <Route path='/jobs' element={<Jobs />} />
+          <Route path='/donate' element={<Donate />} />
           {/* <Route path=':productId' element={<Product />} /> */}
         </Routes>
       </BrowserRouter>
