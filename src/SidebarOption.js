@@ -1,5 +1,6 @@
 import React from 'react'
 import './SidebarOption.css'
+import home_icon from './Assets/home.png'
 
 const SidebarOption = ({ active, text, icon }) => {
     return (

@@ -11,6 +11,8 @@
 }
 .sidebarOption > .sidebaricons{
     padding: 20px;
+    height: 65px;
+    width: 65px;
 }
 .sidebarOption > h2{
     font-weight: 800;
