@@ -18,21 +18,22 @@ const Sidebar = () => {
     <div className='sidebar'>
       {/* Twit icon */}
       <img className='sidebar_twit_icon' width={'100px'} src={logo} alt="" />
+      <div className='sidebar-links'>
+        {/* Sidebar Options */}
+        <Link to='/' className='mylink'><SidebarOption active={true} text="Home" icon={home_icon} /></Link>
+        <SidebarOption text="Explore" icon={"https://cdn-icons-png.flaticon.com/512/61/61088.png"} />
+        <SidebarOption text="Events" icon={"https://cdn-icons-png.flaticon.com/512/3995/3995725.png"} />
+        <SidebarOption text="Resources" icon={"https://cdn-icons-png.flaticon.com/512/751/751432.png"} />
+        {/* <SidebarOption text="Messages" icon={home_icon}/> */}
+        <Link to='/jobs' className='mylink'><SidebarOption text="Job Mela" icon={"https://icon-library.com/images/jobs-icon-png/jobs-icon-png-18.jpg"} /></Link>
 
-      {/* Sidebar Options */}
-      <SidebarOption active={true} text="Home" icon={home_icon}/>
-      <SidebarOption text="Explore" icon={"https://cdn-icons-png.flaticon.com/512/61/61088.png"}/>
-      <SidebarOption text="Events" icon={"https://cdn-icons-png.flaticon.com/512/3995/3995725.png"}/>
-      <SidebarOption text="Resources" icon={"https://cdn-icons-png.flaticon.com/512/751/751432.png"}/>
-      {/* <SidebarOption text="Messages" icon={home_icon}/> */}
-      <SidebarOption text="Job Mela" icon={"https://icon-library.com/images/jobs-icon-png/jobs-icon-png-18.jpg"}/>
-      <SidebarOption text="Donate" icon={"https://cdn-icons-png.flaticon.com/512/176/176696.png"}/>
-      <Link to='/donate'><SidebarOption text="Donate" icon={"https://cdn-icons-png.flaticon.com/512/176/176696.png"}/></Link>
-      {/* <SidebarOption text="Profile" icon={home_icon}/> */}
+        <Link className='mylink' to='/donate'><SidebarOption text="Donate" icon={"https://cdn-icons-png.flaticon.com/512/176/176696.png"} /></Link>
+        {/* <SidebarOption text="Profile" icon={home_icon}/> */}
 
-      <button className='sidebar_tweet'>Tweet</button>
+        <button className='sidebar_tweet'>Tweet</button>
 
-      <Link to='/jobs'><SidebarOption text="Messages" icon={home_icon}/></Link>
+        {/* <Link to='/jobs'><SidebarOption text="Messages" icon={home_icon} /></Link> */}
+      </div>
     </div>
   )
 }

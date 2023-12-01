@@ -5,7 +5,19 @@
     margin-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
 
+}
+.sidebar_twit_icon{
+    margin-left: 40px;
+    /* border: 2px solid red; */
+}
+.mylink{
+    text-decoration: none;
+    color: black;
 }
 
 .sidebar_tweet{
@@ -19,4 +31,7 @@
     margin-top: 20px;
     width:200px;
     font-size: 18px;
+}
+.sidebar-links{
+    margin-top: 20px;
 }
