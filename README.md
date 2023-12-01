@@ -1,4 +1,4 @@
-# Capabilix#
+# Capabilix #
 
 ## About The Project ##
 
