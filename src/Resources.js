@@ -1,16 +1,10 @@
 import React from 'react'
-import Sidebar from './Sidebar'
 
 const Resources = () => {
   return (
     <div>
-      <Sidebar/>
-
-    
-
-const ResourcesComponent = () => {
-  return (
-   
+      <h1>Resources</h1>
+    </div>
   )
 }
 
