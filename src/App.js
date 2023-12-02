@@ -8,6 +8,7 @@ import { RouterContext } from 'react-router';
 import Dashboard from './Dashboard';
 import Jobs from './Jobs'
 import Donate from './Donate'
+import Resources from './Resources'
 // import DonateBox from './DonateBox'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path='/' element={<Dashboard/>} />
           <Route path='/jobs' element={<Jobs />} />
           <Route path='/donate' element={<Donate />} />
+          <Route path='/resources' element={<Resources />} />
           {/* <Route path=':productId' element={<Product />} /> */}
         </Routes>
       </BrowserRouter>

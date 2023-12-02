@@ -17,13 +17,13 @@ const Sidebar = () => {
   return (
     <div className='sidebar'>
       {/* Twit icon */}
-      <img className='sidebar_twit_icon' width={'100px'} src={logo} alt="" />
+      <Link to='/' className='mylink'> <img className='sidebar_twit_icon' width={'100px'} src={logo} alt="" /></Link>
       <div className='sidebar-links'>
         {/* Sidebar Options */}
         <Link to='/' className='mylink'><SidebarOption active={true} text="Home" icon={home_icon} /></Link>
-        <SidebarOption text="Explore" icon={"https://cdn-icons-png.flaticon.com/512/61/61088.png"} />
-        <SidebarOption text="Events" icon={"https://cdn-icons-png.flaticon.com/512/3995/3995725.png"} />
-        <SidebarOption text="Resources" icon={"https://cdn-icons-png.flaticon.com/512/751/751432.png"} />
+        <Link to='/' className='mylink'><SidebarOption text="Explore" icon={"https://cdn-icons-png.flaticon.com/512/61/61088.png"} /></Link>
+        <Link to='/events' className='mylink'><SidebarOption text="Events" icon={"https://cdn-icons-png.flaticon.com/512/3995/3995725.png"} /></Link>
+        <Link to='/resources' className='mylink'><SidebarOption text="Resources" icon={"https://cdn-icons-png.flaticon.com/512/751/751432.png"} /></Link>
         {/* <SidebarOption text="Messages" icon={home_icon}/> */}
         <Link to='/jobs' className='mylink'><SidebarOption text="Job Mela" icon={"https://icon-library.com/images/jobs-icon-png/jobs-icon-png-18.jpg"} /></Link>
 
