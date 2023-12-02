@@ -1,7 +1,7 @@
 import React from 'react'
 import './Post.css'
 
-const Post = ({displayName, userName, verified, text, image, avatar}) => {
+const Post = ({displayName, userName, verified, text, image, avatar,location}) => {
     return (
         <div className='post'>
             <div className="post_avatar">
@@ -27,6 +27,7 @@ const Post = ({displayName, userName, verified, text, image, avatar}) => {
                     <img width={'30px'} src="https://cdn-icons-png.flaticon.com/512/786/786352.png" alt="" />
 
                 </div>
+                
             </div>
         </div>
     )
