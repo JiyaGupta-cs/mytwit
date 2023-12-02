@@ -8,18 +8,26 @@
     flex-direction: column;
 }
 .tweetBox_input{
-    padding: 20px;
+    /* padding: 10px; */
     display: flex;
+    /* background-color: #E6ECF0; */
 }
 .tweetBox_input > input {
     flex: 1;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     font-size: 20px;
     border: none;
+    background-color: #f5f6f7;
+    padding: 10px;
+    /* border-radius: 10px; */
+    padding-left: 25px;
+    margin-bottom: 5px;
 }
 .tweetBox_imageInput {
 border: none;
 padding: 10px;
+background-color: #f5f6f7;
+padding-left: 25px;
 }
 
 .tweetBox_tweetButton{
@@ -32,4 +40,6 @@ background-color: var(--twit-color);
     height: 40px;
     margin-top: 20px;
     width:100px;
-    font-size: 15px;}
+    font-size: 17px;
+    letter-spacing: 0.5px;
+}
