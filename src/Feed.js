@@ -17,7 +17,7 @@ const Feed = () => {
     <div className='feed'>
       {/* Header */}
       <div className="feed_header">
-      <h2>Home</h2>
+      <h2 className='dec-h' style={{marginLeft: "70px"}}>Embrace your strength, defy the odds. You're unstoppable</h2>
       </div>
       {/* Tweet Box */}
       <TweetBox />
