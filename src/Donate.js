@@ -8,8 +8,74 @@ import donate_banner from './Assets/donate_banner.jpg'
 import './Donate.css'
 import scholarship_icon from './Assets/scholarship_icon.png'
 import education_logo from './Assets/education_logo.png'
+import BeyondBarriers from './Assets/BeyondBarriers.png'
 
 const Donate = () => {
+
+
+    const phonePrice = 67999;
+    const laptopPrice = 5000;
+    var formatter = new Intl.NumberFormat("en-US", {
+      style: "currency",
+      currency: "INR",
+  
+      // These options are needed to round to whole numbers if that's what you want.
+      minimumFractionDigits: 0, // (this suffices for whole numbers, but will print 2500.10 as $2,500.1)
+      //maximumFractionDigits: 0, // (causes 2500.99 to be printed as $2,501)
+    });
+  
+    const loadScript = (src) => {
+      return new Promise((resovle) => {
+        const script = document.createElement("script");
+        script.src = src;
+  
+        script.onload = () => {
+          resovle(true);
+        };
+  
+        script.onerror = () => {
+          resovle(false);
+        };
+  
+        document.body.appendChild(script);
+      });
+    };
+  
+    const displayRazorpay = async (amount) => {
+      const res = await loadScript(
+        "https://checkout.razorpay.com/v1/checkout.js"
+      );
+  
+      if (!res) {
+        alert("You are offline... Failed to load Razorpay SDK");
+        return;
+      }
+  
+      const options = {
+        key: "rzp_test_VdGdvprTKB8u1w",
+        currency: "INR",
+        amount: amount * 100,
+        name: "Capabilix",
+        description: "Thanks for purchasing",
+        image:{BeyondBarriers},
+  
+        handler: function (response) {
+          alert(response.razorpay_payment_id);
+          alert("Payment Successfully");
+        },
+        prefill: {
+          name: "code with akky",
+        },
+      };
+  
+      const paymentObject = new window.Razorpay(options);
+      paymentObject.open();
+    };
+
+
+
+
+    
     return (
         <div className="app">
             {/* <h2>This is home</h2> */}
@@ -17,6 +83,7 @@ const Donate = () => {
             <Sidebar />
             <div className="donate_box">
 
+            {/* <button onClick={()=>displayRazorpay(laptopPrice)}>Pay</button> */}
 
             {/* <img className='donatebanner' width={'820px'} height={'350px'} src={donate_banner} alt="" /> */}
 
@@ -66,12 +133,17 @@ const Donate = () => {
 
 
 
-                <div  class="inner-wrapper-hero sad"><div class="payemnt-wrapper"><div data-w-id="2d335d07-5ffe-574b-2c97-328d886917e2" class="text-block-2">Choose Your Donation Amount</div><div class="div-block-6"><div data-w-id="2d335d07-5ffe-574b-2c97-328d886917e5" class="div-block-4 amounts" style={{ opacity: 1, transform: 'translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)', transformStyle: 'preserve-3d' }}>500</div><div data-w-id="2d335d07-5ffe-574b-2c97-328d886917e7" class="div-block-4 amounts" style={{ opacity: 1, transform: 'translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)', transformStyle: 'preserve-3d' }}>1000</div><div data-w-id="2d335d07-5ffe-574b-2c97-328d886917e9" class="div-block-4 amounts" style={{ opacity: 1, transform: 'translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)', transformStyle: 'preserve-3d' }}>5000</div></div><div class="div-block-6"><div data-w-id="2d335d07-5ffe-574b-2c97-328d886917ec" class="div-block-4 amounts" style={{ opacity: 1, transform: 'translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)', transformStyle: 'preserve-3d' }}>10000</div><div data-w-id="2d335d07-5ffe-574b-2c97-328d886917ee" class="div-block-4 amounts other" style={{ opacity: 1, transform: 'translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)', transformStyle: 'preserve-3d' }}>OTHER AMOUNT</div></div><div class="div-block-6"><div data-w-id="2d335d07-5ffe-574b-2c97-328d886917f1" class="div-block-4 amounts other button saf" style={{ opacity: 1, transform: 'translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)', transformStyle: 'preserve-3d' }}>MAKE A DIFFERENCE NOW!</div></div></div></div>
-
+                <div  class="inner-wrapper-hero sad"><div class="payemnt-wrapper"><div data-w-id="2d335d07-5ffe-574b-2c97-328d886917e2" class="text-block-2">Choose Your Donation Amount</div><div class="div-block-6"><div data-w-id="2d335d07-5ffe-574b-2c97-328d886917e5" class="div-block-4 amounts" style={{ opacity: 1, transform: 'translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)', transformStyle: 'preserve-3d' }}>500</div><div data-w-id="2d335d07-5ffe-574b-2c97-328d886917e7" class="div-block-4 amounts" style={{ opacity: 1, transform: 'translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)', transformStyle: 'preserve-3d' }}>1000</div><div data-w-id="2d335d07-5ffe-574b-2c97-328d886917e9" class="div-block-4 amounts" style={{ opacity: 1, transform: 'translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)', transformStyle: 'preserve-3d' }}>5000</div></div><div class="div-block-6"><div data-w-id="2d335d07-5ffe-574b-2c97-328d886917ec" class="div-block-4 amounts" style={{ opacity: 1, transform: 'translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)', transformStyle: 'preserve-3d' }}>10000</div><div data-w-id="2d335d07-5ffe-574b-2c97-328d886917ee" class="div-block-4 amounts other" style={{ opacity: 1, transform: 'translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)', transformStyle: 'preserve-3d' }}>OTHER AMOUNT</div></div><div class="div-block-6"><div onClick={()=>displayRazorpay(laptopPrice)} data-w-id="2d335d07-5ffe-574b-2c97-328d886917f1" class="div-block-4 amounts other button saf" style={{ opacity: 1, transform: 'translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)', transformStyle: 'preserve-3d' }}>MAKE A DIFFERENCE NOW!</div></div></div></div>
+<div style={{display:'flex', gap:'0.5rem'}}> <p style={{fontWeight:'600'}}>Secured By</p><img width={'100px'} src="https://upload.wikimedia.org/wikipedia/commons/8/89/Razorpay_logo.svg" alt="" /></div>
                 </div> 
+
+
+
+
 {/* 
              
             */}
+               
                
 
                 
@@ -191,6 +263,20 @@ const Donate = () => {
       
     </div>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
