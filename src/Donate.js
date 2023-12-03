@@ -6,6 +6,8 @@ import './Dashboard.css';
 // import './DonateBox';
 import donate_banner from './Assets/donate_banner.jpg'
 import './Donate.css'
+import scholarship_icon from './Assets/scholarship_icon.png'
+import education_logo from './Assets/education_logo.png'
 
 const Donate = () => {
     return (
@@ -92,7 +94,7 @@ const Donate = () => {
 
                             <span class="pricing">
                                 <span>
-                                    <img width={'20px'} height={'20px'} src="https://www.flaticon.com/free-icons/book" alt="" />
+                                    <img width={'20px'} height={'20px'} src={education_logo} alt="" />
                                 </span>
                             </span>
                             <h2 class="c-title">Education and Training</h2>
@@ -137,7 +139,7 @@ const Donate = () => {
                             <span class="pricing">
                                 <span>
 
-                                    <img width={'20px'} height={'20px'} src="https://www.flaticon.com/free-icons/book" alt="" />
+                                    <img width={'20px'} height={'20px'} src={scholarship_icon} alt="" />
 
 
                                 </span>
