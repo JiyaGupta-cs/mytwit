@@ -58,6 +58,15 @@ figure>img {
         text-decoration: none;
         font-family: cursive;      
 }
+.dec-h1{
+    display: table;
+    /* padding: 0.5em; */
+    margin-left: 30px;
+    text-align: center;
+    color: hsl(203, 89%, 53%);
+    text-decoration: none;
+    font-family: cursive;      
+}
 .r-card{
     width: 250px !important;
     border-radius: 16px;
