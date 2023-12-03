@@ -8,7 +8,7 @@ import Jobsection from './Jobsection'
 
 const Jobs = () => {
   return (
-    <div className="app">
+    <div className="app j-app">
       {/* <h2>This is home</h2> */}
       {/* <Sidebar />, <Feed />, <Widgets /> */}
       <Sidebar />
