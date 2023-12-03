@@ -30,9 +30,10 @@ const Resources = () => {
                             </span>
                             <h2 class="c-title">Right Of Persons With Disability Act</h2>
                             {/* <p class="info">The Disabilities Act ensures equal rights for individuals with disabilities in education and employment.</p> */}
+                            <a href="https://thenationaltrust.gov.in/content/" target='_blank'>
                              <button class="dn_button">
                                 Click to View
-                            </button> 
+                            </button> </a>
                         </div>
                     </article>
                     <article class="plan [ r-card ]">
