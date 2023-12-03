@@ -68,8 +68,7 @@ const Job = ({displayName, userName, verified, text, image, avatar,salary,locati
             </div> */}
 
           <div class="mycard_text">
-            <p>{text} Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, eius?elit. Totam, eius?elit. Totam, eius?
-            </p>
+            <p>{text}</p>
             {/* <hr /> */}
             
           </div>
