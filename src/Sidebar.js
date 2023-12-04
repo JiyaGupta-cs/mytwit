@@ -30,7 +30,7 @@ const Sidebar = () => {
         <Link className='mylink' to='/donate'><SidebarOption text="Donate" icon={"https://cdn-icons-png.flaticon.com/512/176/176696.png"} /></Link>
         {/* <SidebarOption text="Profile" icon={home_icon}/> */}
 
-        <button className='sidebar_tweet'>Tweet</button>
+        <button className='sidebar_tweet'>Post</button>
 
         {/* <Link to='/jobs'><SidebarOption text="Messages" icon={home_icon} /></Link> */}
       </div>
