@@ -22,7 +22,7 @@ const Sidebar = () => {
         {/* Sidebar Options */}
         {/* <Link to='/' className='mylink'><SidebarOption active={true} text="Home" icon={home_icon} /></Link> */}
         <Link to='/' className='mylink'><SidebarOption text="Explore" icon={"https://cdn-icons-png.flaticon.com/512/61/61088.png"} /></Link>
-        <Link to='/' className='mylink'><SidebarOption text="Events" icon={"https://cdn-icons-png.flaticon.com/512/3995/3995725.png"} /></Link>
+        <Link to='/events' className='mylink'><SidebarOption text="Events" icon={"https://cdn-icons-png.flaticon.com/512/3995/3995725.png"} /></Link>
         <Link to='/resources' className='mylink'><SidebarOption text="Resources" icon={"https://cdn-icons-png.flaticon.com/512/751/751432.png"} /></Link>
         {/* <SidebarOption text="Messages" icon={home_icon}/> */}
         <Link to='/jobs' className='mylink'><SidebarOption text="Job Mela" icon={"https://icon-library.com/images/jobs-icon-png/jobs-icon-png-18.jpg"} /></Link>
