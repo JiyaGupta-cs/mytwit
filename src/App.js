@@ -10,6 +10,7 @@ import Jobs from './Jobs'
 import Donate from './Donate'
 import Resources from './Resources'
 import Events from './Events'
+import SignLog from './SignLog';
 // import DonateBox from './DonateBox'
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path='/donate' element={<Donate />} />
           <Route path='/resources' element={<Resources />} />
           <Route path='/events' element={<Events />} />
+          <Route path='/signup' element={<SignLog />} />
           {/* <Route path=':productId' element={<Product />} /> */}
         </Routes>
       </BrowserRouter>

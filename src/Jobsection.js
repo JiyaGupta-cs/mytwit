@@ -3,7 +3,7 @@ import './Feed.css'
 // import TweetBox from './TweetBox'
 // import Post from './Post'
 import Job from './Job'
-import db from './firebase'
+import {db} from './firebase'
 import './Jobsection.css'
 
 const Jobsection = () => {

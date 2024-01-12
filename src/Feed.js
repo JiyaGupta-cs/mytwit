@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Feed.css'
 import TweetBox from './TweetBox'
 import Post from './Post'
-import db from './firebase'
+import {db} from './firebase'
 
 const Feed = () => {
   const[posts,setPosts]=useState([]);

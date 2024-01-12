@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import './TweetBox.css'
-import db from './firebase'
+import {db} from './firebase'
 
 const TweetBox = () => {
-  const[tweetMessage,setTweetMessage] = useState("");
+  const[tweetMessage,setTweetMessage]   = useState("");
   const[tweetImage,setTweetImage] = useState("");
   const sendTweet = e =>{
     e.preventDefault();
