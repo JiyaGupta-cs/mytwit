@@ -31,3 +31,7 @@ $ cd mytwit/
 $ npm install
 $ npm start 
 ```
+
+## Contributing Guidelines :octocat: ##
+
+[https://github.com/JiyaGupta-cs/mytwit/blob/master/contributing.md](https://github.com/JiyaGupta-cs/mytwit/blob/master/contributing.md)
