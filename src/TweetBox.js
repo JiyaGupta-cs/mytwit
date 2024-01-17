@@ -8,7 +8,7 @@ const TweetBox = () => {
   const sendTweet = (e) => {
     e.preventDefault();
     if (tweetMessage == "") {
-      console.log("Post cannot be empty.");
+      alert("Post cannot be empty.");
       return;
     }
     db.collection("posts").add({
