@@ -1,7 +1,7 @@
-
+// LikeButton.js
 import React, { useState } from 'react';
-import './LikeButton.css'; // Import your CSS file for styling
-import { FaThumbsUp } from 'react-icons/fa'; // Assuming you have an icon library, like react-icons
+import './LikeButton.css';
+import { FaHeart } from 'react-icons/fa';
 
 const LikeButton = () => {
   const [likeCount, setLikeCount] = useState(0);
@@ -20,7 +20,7 @@ const LikeButton = () => {
   return (
     <div>
       <button onClick={handleLikeClick} className={isLiked ? 'liked' : ''}>
-        <FaThumbsUp /> {isLiked ? 'Unlike' : 'Like'}
+        <FaHeart style={{ fontSize: '30px' }} />
       </button>
       <span className={isLiked ? 'like-count liked' : 'like-count'}>
         {likeCount} {likeCount === 1 ? 'like' : 'likes'}
