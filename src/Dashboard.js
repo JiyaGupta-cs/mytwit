@@ -9,7 +9,7 @@ import './Dashboard.css';
 const Home = () => {
   return (
     <div className="app">
-      <Sidebar />, <Feed />, <Widgets />
+      <Sidebar /> <Feed /> <Widgets />
     </div>
   )
 }
