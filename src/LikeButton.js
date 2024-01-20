@@ -1,7 +1,7 @@
 // LikeButton.js
 import React, { useState, useEffect } from 'react';
 import './LikeButton.css';
-import { FaHeart } from 'react-icons/fa';
+
 
 const LikeButton = () => {
  

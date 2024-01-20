@@ -2,7 +2,7 @@ import React from 'react';
 import './Post.css';
 import LikeButton from './LikeButton'; // Import the LikeButton components
 
-const Post = ({ displayName, userName, verified, text, image, avatar, location }) => {
+const Post = ({ displayName,text, image, avatar, location }) => {
   return (
     <div className='post'>
       <div className="post_avatar">
