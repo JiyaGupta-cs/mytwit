@@ -1,6 +1,6 @@
 import React from 'react';
 import './Post.css';
-import LikeButton from './LikeButton'; // Import the LikeButton component
+import LikeButton from './LikeButton'; // Import the LikeButton components
 
 const Post = ({ displayName, userName, verified, text, image, avatar, location }) => {
   return (
