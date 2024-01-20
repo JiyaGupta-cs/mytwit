@@ -29,7 +29,7 @@ const Post = ({ displayName, userName, verified, text, image, avatar, location }
 
           {/* Other action buttons/icons */}
           
-          <img width={'30px'} src="comment-icon.png" alt="Comment Icon" /> 
+          <img width={'30px'} src="heart-icon.png" alt="Comment Icon" /> 
           <img width={'30px'} src="share-icon.png" alt="Share Icon" />
           <img width={'30px'} src="bookmark-icon.png" alt="Bookmark Icon" />
         </div>
