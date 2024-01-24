@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './Widgets.css'
 import { TwitterTimelineEmbed, TwitterShareButton,TwitterTweetEmbed } from 'react-twitter-embed'
-const Widgets = () => {
+const Widgets = ({searchQuery, setSearchQuery}) => {
+  const inputRef = useRef(null);
+ 
+  const handleSearchQueryChange = (e) => {
+    setSearchQuery(e.target.value);
+  }
+
   return (
     <div className="widgets">
     <div className="widgets__input">
-      {/* <SearchIcon className="widgets__searchIcon" /> */}
-      <img className='widgets_search_icon' width={'25px'} src={'https://cdn3.iconfinder.com/data/icons/feather-5/24/search-512.png'} alt="" />
-      <input placeholder="Search" type="text" />
+      <img className='widgets_search_icon' width={'25px'} src={'https://cdn3.iconfinder.com/data/icons/feather-5/24/search-512.png'} alt="" onClick={() => inputRef.current.focus()} />
+      <input placeholder="Search" type="text" value={searchQuery} onChange={handleSearchQueryChange} ref={inputRef} />
     </div>
 
     <div className="widgets__widgetContainer">
