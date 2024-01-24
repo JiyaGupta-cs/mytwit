@@ -12,3 +12,18 @@ body{
     margin-right: 10px;
     padding: 0 10px;
   }
+  .go-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+    transition: opacity 0.3s;
+  }
+  
+  .go-to-top-button.visible {
+    display: block;
+  }

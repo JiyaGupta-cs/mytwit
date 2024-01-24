@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./TweetBox.css";
 import { db } from "./firebase";
+import GoToTopButton from '../src/components/Button/GoToTopButton'; // Import the GoToTopButton component
 
 const TweetBox = () => {
   const [tweetMessage, setTweetMessage] = useState("");
@@ -33,6 +34,7 @@ const TweetBox = () => {
             type="text"
           />
         </div>
+        <GoToTopButton /> {/* Use the GoToTopButton component here */}
         <input
           onChange={(e) => setTweetImage(e.target.value)}
           value={tweetImage}

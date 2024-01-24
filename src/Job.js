@@ -1,5 +1,6 @@
 import React from 'react'
 import './Job.css'
+import GoToTopButton from '../src/components/Button/GoToTopButton'; // Import the GoToTopButton component
 // import './Post.css'
 
 const Job = ({displayName, userName, verified, text, image, avatar,salary,location,type,title}) => {
@@ -166,6 +167,7 @@ const Job = ({displayName, userName, verified, text, image, avatar,salary,locati
 
 
 
+<GoToTopButton /> {/* Use the GoToTopButton component here */}
 
 
 
@@ -173,6 +175,7 @@ const Job = ({displayName, userName, verified, text, image, avatar,salary,locati
 
             
         </div>
+
     )
 }
 

@@ -3,6 +3,7 @@ import './Feed.css'
 import TweetBox from './TweetBox'
 import Post from './Post'
 import {db} from './firebase'
+import GoToTopButton from '../src/components/Button/GoToTopButton'; // Import the GoToTopButton component
 
 const Feed = () => {
   const[posts,setPosts]=useState([]);
@@ -35,7 +36,8 @@ image={post.image}
 
       {/* Posts */}
       {/* <Post displayName="Sonny Sangha" username="ssssangha" verified={true} text="Yes it's working" avatar="https://static.vecteezy.com/system/resources/previews/002/002/257/non_2x/beautiful-woman-avatar-character-icon-free-vector.jpg" image="https://arts.giphy.com/wp-content/uploads/2017/11/giphy-14.gif"/> */}
-      
+      <GoToTopButton /> {/* Use the GoToTopButton component here */}
+
     </div>
   )
 }
