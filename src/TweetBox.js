@@ -7,7 +7,7 @@ const TweetBox = () => {
   const [tweetImage, setTweetImage] = useState("");
   const sendTweet = (e) => {
     e.preventDefault();
-    if (tweetMessage == "") {
+    if (tweetMessage === "") {
       alert("Post cannot be empty.");
       return;
     }

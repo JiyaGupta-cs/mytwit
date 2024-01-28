@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import "./Feed.css";
 import TweetBox from "./TweetBox";
 import Post from "./Post";
+
+import { IoReorderThreeOutline } from "react-icons/io5";
 import { db } from "./firebase";
 
-const Feed = ({ searchQuery }) => {
+const Feed = ({ searchQuery, setShowSideBar, showSideBar }) => {
   const [posts, setPosts] = useState([]);
   const [allPosts, setAllPosts] = useState([]);
 
@@ -27,6 +29,12 @@ const Feed = ({ searchQuery }) => {
     <div className="feed">
       {/* Header */}
       <div className="feed_header">
+        <button
+          onClick={() => setShowSideBar(!showSideBar)}
+          className="sidebar-button"
+        >
+          <IoReorderThreeOutline size={32} />
+        </button>
         <h2 className="dec-h" style={{ marginLeft: "70px" }}>
           Embrace your strength, defy the odds!!. You're unstoppable
         </h2>

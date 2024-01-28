@@ -1,14 +1,14 @@
-body{
-    /* --twit-color:#50b7f5; */
-  --twit-color:#0056D2;
-    --twit-background:#e6ecf0;
-  }
-  
-  .app{
-    display: flex;
-    height: 100vh;
-    /* max-width: 1300px; */
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 0 10px;
-  }
+body {
+  /* --twit-color:#50b7f5; */
+  --twit-color: #0056d2;
+  --twit-background: #e6ecf0;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 0 10px;
+  max-width: 90vw;
+}
