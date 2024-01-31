@@ -8,6 +8,7 @@
     border-radius: 30px;
     color:var(--twit-color);
     transition: color 100ms ease-out;
+    transform: scale(1.02);
 }
 .sidebarOption > .sidebaricons{
     padding: 20px;
