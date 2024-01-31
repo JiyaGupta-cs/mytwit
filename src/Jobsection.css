@@ -3,7 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    background-color: #F1F2F7;
+    background-color: var(--bg);
     padding-left: 40px;
     height: fit-content;
   }

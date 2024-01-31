@@ -3,12 +3,16 @@
     align-items: flex-start;
     border-bottom: 1px solid var(--twitter-background);
     padding-bottom: 10px;
+    background-color: var(--second);
+    border-radius: 10px;
+    margin: 5px;
+    margin-top: 10px;
   }
   
   .post_body {
     flex: 1;
     padding: 10px;
-    width: 750px;
+    width: 40vw;
   }
   
   .post_body > img {

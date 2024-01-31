@@ -2,8 +2,14 @@ body{
   /* --twit-color:#50b7f5; */
   --twit-color:#0C5685;
   --twit-background:#e6ecf0;
+  background-color: var(--bg);
+  color: var(--text);
 }
-
+.white-content {
+  --bg:rgb(46, 40, 72);
+  --text: #ffffff;
+  --second:rgb(58, 50, 93);
+}
 .app{
   display: flex;
   height: 100vh;

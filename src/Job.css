@@ -1,5 +1,5 @@
 .jobpage{
-    background-color: #F1F2F7;
+    background-color: var(--second);
     width: 360px;
 }
   
@@ -84,7 +84,7 @@
   }
   
   .mycard {
-    background-color: white;
+    background-color: var(--second);
     border-radius: 0.25rem;
     box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
     display: flex;
@@ -175,7 +175,7 @@
     margin-top: 1rem;
   }
   .box{
-    background-color: #c9e5fd;
+    background-color: var(--bg);
     display: flex;
     flex-direction: column;
     gap:5px;

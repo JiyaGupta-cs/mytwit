@@ -96,6 +96,7 @@ article {
     color: var(--purpl);
     cursor: pointer;
     background-color: #e9eae4;
+	background-color: var(--second);
     margin-right: 5px;
     transition: all .2s;
 	height: 40px;

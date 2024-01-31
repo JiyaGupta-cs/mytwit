@@ -17,17 +17,23 @@
     /* margin-left: 20px; */
     font-size: 20px;
     border: none;
-    background-color: #f5f6f7;
+    background-color: var(--bg);
     padding: 10px;
     /* border-radius: 10px; */
     padding-left: 25px;
     margin-bottom: 5px;
+   border: 1px solid white;
+   border-radius: 10px;
+   color: var(--text);
 }
 .tweetBox_imageInput {
 border: none;
 padding: 10px;
-background-color: #f5f6f7;
+background-color: var(--bg);
 padding-left: 25px;
+border: 1px solid white;
+border-radius: 10px;
+color: var(--text);
 }
 
 .tweetBox_tweetButton{

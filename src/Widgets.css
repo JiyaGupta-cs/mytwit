@@ -51,7 +51,7 @@
   padding: 20px;
   width: 350px;
   /* adjusts width */
-  background-color: #f5f8fa;
+  background-color: var(--second);
   border-radius: 20px;
 }
 

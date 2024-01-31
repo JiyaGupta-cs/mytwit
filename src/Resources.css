@@ -45,7 +45,7 @@ figure>img {
     padding-top: 0;
 }
 .resources{
-    background-color: #E6ECF0;
+    background-color:var(--second);
     padding: 20px;
     width: 830px;
     border-radius: 10px;

@@ -16,7 +16,7 @@
 .feed_header{
     position: sticky;
     top: 0;
-    background: white;
+    background: var(--second);
     z-index: 100;
     border: 1px solid var(--twit-background);
     padding: 15px 20px;
