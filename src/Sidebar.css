@@ -37,3 +37,7 @@
 .sidebar-links{
     margin-top: 20px;
 }
+.sidebar_tweet:hover{
+    background-color: var(--twit-color);
+    transform: scale(1.10);
+}
