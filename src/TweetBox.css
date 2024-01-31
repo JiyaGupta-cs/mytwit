@@ -43,3 +43,8 @@ background-color: var(--twit-color);
     font-size: 17px;
     letter-spacing: 0.5px;
 }
+
+.tweetBox_tweetButton:hover{
+    background-color: var(--twit-color) ;
+    transform: scale(1.05);
+}
