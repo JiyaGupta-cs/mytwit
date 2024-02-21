@@ -1,6 +1,6 @@
 import React from 'react'
 import './Post.css'
-
+import GoToTopButton from './GoToTopButton'; 
 const Post = ({displayName, userName, verified, text, image, avatar,location}) => {
     return (
         <div className='post'>
@@ -27,7 +27,7 @@ const Post = ({displayName, userName, verified, text, image, avatar,location}) =
                     <img width={'30px'} src="https://cdn-icons-png.flaticon.com/512/786/786352.png" alt="" />
 
                 </div>
-                
+                <GoToTopButton />  
             </div>
         </div>
     )

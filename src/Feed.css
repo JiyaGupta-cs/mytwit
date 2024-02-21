@@ -24,4 +24,23 @@
 .feed_header > h2 {
     font-size: 20px;
     font-weight: 800;
-}
+} .go-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 30%;
+    background-color: #126bcb;
+    color: #fff;
+    width: 40px; /* Adjust the width and height to create a circle */
+    height: 40px;
+    border-radius: 50%; /* Ensure it's a circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px; /* Adjust the size of the arrow */
+    cursor: pointer;
+  }
+  
+  .go-to-top:hover {
+    background-color: #0056b3;
+  }
+  
