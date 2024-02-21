@@ -4,14 +4,15 @@ import TweetBox from './TweetBox';
 import Post from './Post';
 import { db } from './firebase';
 
-const Feed = () => {
+const Feed = ({ searchQuery }) => {
   const [posts, setPosts] = useState([]);
+  const [allPosts, setAllPosts] = useState([]);
   const [showGoToTop, setShowGoToTop] = useState(false);
   const feedRef = useRef(null);
 
   useEffect(() => {
     db.collection('posts').onSnapshot(snapshot => (
-      setPosts(snapshot.docs.map(doc => doc.data()))
+      setAllPosts(snapshot.docs.map(doc => doc.data()))
     ));
 
     const handleScroll = () => {
@@ -29,6 +30,15 @@ const Feed = () => {
     };
   }, []);
 
+  useEffect(() => {
+    if (searchQuery !== null) {
+      const filteredPosts = allPosts.filter(post =>
+        post.text.toLowerCase().includes(searchQuery.toLowerCase())
+      );
+      setPosts(filteredPosts);
+    }
+  }, [searchQuery, allPosts]);
+
   const handleScrollToTop = () => {
     feedRef.current.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -37,11 +47,14 @@ const Feed = () => {
     <div className='feed' ref={feedRef}>
       {/* Header */}
       <div className="feed_header">
-        <h2 className='dec-h' style={{ marginLeft: "70px" }}>Embrace your strength, defy the odds!!. You're unstoppable</h2>
+        <h2 className='dec-h' style={{ marginLeft: "70px" }}>
+          Embrace your strength, defy the odds!!. You're unstoppable
+        </h2>
       </div>
       {/* Tweet Box */}
       <TweetBox />
 
+      {/* Posts */}
       {posts.map(post => (
         <Post
           displayName={post.displayName}
@@ -55,11 +68,9 @@ const Feed = () => {
 
       {/* Go to Top Button */}
       {showGoToTop && <button className="go-to-top" onClick={handleScrollToTop}>&#8593;</button>}
-
-      {/* Posts */}
-      {/* <Post displayName="Sonny Sangha" username="ssssangha" verified={true} text="Yes it's working" avatar="https://static.vecteezy.com/system/resources/previews/002/002/257/non_2x/beautiful-woman-avatar-character-icon-free-vector.jpg" image="https://arts.giphy.com/wp-content/uploads/2017/11/giphy-14.gif"/> */}
     </div>
   );
-}
+};
 
 export default Feed;
+
