@@ -5,7 +5,7 @@ import './Feed.css'
 import Job from './Job'
 import {db} from './firebase'
 import './Jobsection.css'
-
+import GoToTopButton from './GoToTopButton';
 const Jobsection = () => {
   const[jobs,setJobs]=useState([]);
 
@@ -39,7 +39,7 @@ title={job.title}
       />
       
       ))}
-
+<GoToTopButton/>
     </div>
   )
 }
