@@ -1,7 +1,7 @@
 import React from 'react'
 import Sidebar from './Sidebar'
 import sidebanner from './Assets/sidebanner.png'
-
+import GoToTopButton from './GoToTopButton'
 const Event = () => {
   return (
     <div className='app'>
@@ -23,6 +23,7 @@ const Event = () => {
           <img src={sidebanner} alt="" />
         </figure>
       </div>
+      <GoToTopButton/>
     </div>
   )
 }

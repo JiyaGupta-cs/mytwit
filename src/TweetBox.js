@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./TweetBox.css";
 import { db } from "./firebase";
-
+import GoToTopButton from "./GoToTopButton";
 const TweetBox = () => {
   const [tweetMessage, setTweetMessage] = useState("");
   const [tweetImage, setTweetImage] = useState("");
@@ -48,6 +48,7 @@ const TweetBox = () => {
           Post
         </button>
       </form>
+      <GoToTopButton/>
     </div>
   );
 };

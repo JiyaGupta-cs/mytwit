@@ -1,0 +1,25 @@
+.go-to-top-page {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  background-color: #3685fb; /* Use specific color code for the background */
+  color: #0d213f; /* Use specific color code for the text */
+  padding: 12px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer; /* Add cursor pointer property */
+  height: 55px;
+  width: 55px;
+  font-size: 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.go-to-top-page:hover {
+  background-color: #2f73d9; /* Use specific color code for the background on hover */
+  transform: scale(1.1);
+}
+
+.go-to-top-page:active {
+  transform: scale(0.9);
+}
