@@ -11,3 +11,47 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* Works in Firefox, Edge, and Chrome */
+
+/* width */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3498db; /* Change this color to blue or any other color you prefer */
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #31708f;
+}
+/* Works in Firefox */
+
+/* width */
+::-moz-scrollbar {
+  width: 9px;
+}
+
+/* Track */
+::-moz-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-moz-scrollbar-thumb {
+  background: #3498db;
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+::-moz-scrollbar-thumb:hover {
+  background: #31708f;
+}
