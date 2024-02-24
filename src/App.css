@@ -6,9 +6,9 @@ body{
   color: var(--text);
 }
 .white-content {
-  --bg:rgb(46, 40, 72);
+  --bg:rgb(0, 0, 17);
   --text: #ffffff;
-  --second:rgb(58, 50, 93);
+  --second:rgb(14, 5, 55);
 }
 .app{
   display: flex;
