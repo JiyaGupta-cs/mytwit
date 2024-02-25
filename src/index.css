@@ -11,47 +11,45 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-/* Works in Firefox, Edge, and Chrome */
-
-/* width */
+/*Scrollbar*/
 ::-webkit-scrollbar {
-  width: 9px;
+  width: 12px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #333;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #3498db; /* Change this color to blue or any other color you prefer */
+  background: #777b; /* Change this color to blue or any other color you prefer */
   border-radius: 6px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #31708f;
+  background: #4e4e4e;
 }
 /* Works in Firefox */
 
 /* width */
 ::-moz-scrollbar {
-  width: 9px;
+  width: 12px;
 }
 
 /* Track */
 ::-moz-scrollbar-track {
-  background: #f1f1f1;
+  background: #333;
 }
 
 /* Handle */
 ::-moz-scrollbar-thumb {
-  background: #3498db;
+  background: #777b;
   border-radius: 6px;
 }
 
 /* Handle on hover */
 ::-moz-scrollbar-thumb:hover {
-  background: #31708f;
+  background: #4e4e4e;
 }
