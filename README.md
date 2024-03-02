@@ -39,3 +39,11 @@ $ npm start
 ## Contributing Guidelines :octocat: ##
 
 [https://github.com/JiyaGupta-cs/mytwit/blob/master/contributing.md](https://github.com/JiyaGupta-cs/mytwit/blob/master/contributing.md)
+
+## Code of conduct
+
+This project and everyone participating in it is governed by the [Code of Conduct](./Code_of_conduct.md). By participating, you are expected to uphold this code.
+
+## License 
+
+This project is licensed under the [MIT License](./license.md).
