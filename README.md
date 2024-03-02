@@ -21,7 +21,11 @@ Key Features in which Users can:-
 
 
 ## Built With - ##
-  * React JS :atom_symbol:
+  * React JS <img width="20px" height="20px" src="https://skillicons.dev/icons?i=react" />
+  * Twitter API <img width="20px" height="20px" src="https://skillicons.dev/icons?i=twitter" />
+  * Google Calendar 📆
+  * Firebase <img width="20px" height="20px" src="https://skillicons.dev/icons?i=firebase" />
+  * Razorpay💲
 
 
 ## Getting Started :octocat: ##
