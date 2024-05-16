@@ -1,8 +1,36 @@
-import React from 'react'
+import React,{useEffect, useState} from 'react'
 import './Post.css'
 import { RWebShare } from "react-web-share";
+import axios from 'axios';
+
+
 
 const Post = ({displayName, userName, verified, text, image, avatar,location}) => {
+    const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    // Fetch posts from backend API when the component mounts
+    axios.get('/api/posts')
+      .then(response => {
+        setPosts(response.data);
+      })
+      .catch(error => {
+        console.error('Error fetching posts:', error);
+      });
+  }, []);
+
+    const handleSharePost = (postId) => {
+        // Make an API request to share the post
+        axios.post(`/api/posts/${postId}/share`)
+          .then(response => {
+            // Handle successful sharing
+            console.log('Post shared successfully:', response.data);
+          })
+          .catch(error => {
+            console.error('Error sharing post:', error);
+          });
+      };
+
     return (
         <div className='post'>
             <div className="post_avatar">
@@ -27,7 +55,7 @@ const Post = ({displayName, userName, verified, text, image, avatar,location}) =
                     <RWebShare
                     data={{
                         text: "Share Post",
-                        url: "https://mytwit.vercel.app/",
+                        url: handleSharePost(posts.Id),
                         title: "Capabilix",
                     }}
                     onClick={() =>
